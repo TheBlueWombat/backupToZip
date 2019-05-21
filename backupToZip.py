@@ -20,7 +20,7 @@ def  backupToZip(folder):
 		
 	# Create the ZIP file
 	print('Creating %s...' % (zipFilename))
-	backupToZip = zipfile.ZipFile(zipFilename, 'w')
+	backupZip = zipfile.ZipFile('C:\\Users\\cruz\\Desktop\\' + zipFilename, 'w')
 	
 	# Walk the entire folder tree and compress the files in each folder
 	for foldername, subfolders, filenames in os.walk(folder):
